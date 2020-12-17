@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/loft_att/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/loft_att/static/js/main.4ba95723.chunk.js",
+    "main.js.map": "/loft_att/static/js/main.4ba95723.chunk.js.map",
+    "runtime-main.js": "/loft_att/static/js/runtime-main.6a62020d.js",
+    "runtime-main.js.map": "/loft_att/static/js/runtime-main.6a62020d.js.map",
+    "static/js/2.bdb1f6ee.chunk.js": "/loft_att/static/js/2.bdb1f6ee.chunk.js",
+    "static/js/2.bdb1f6ee.chunk.js.map": "/loft_att/static/js/2.bdb1f6ee.chunk.js.map",
+    "static/js/3.e6cb05e6.chunk.js": "/loft_att/static/js/3.e6cb05e6.chunk.js",
+    "static/js/3.e6cb05e6.chunk.js.map": "/loft_att/static/js/3.e6cb05e6.chunk.js.map",
+    "index.html": "/loft_att/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/loft_att/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bdb1f6ee.chunk.js.LICENSE.txt": "/loft_att/static/js/2.bdb1f6ee.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/loft_att/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a62020d.js",
+    "static/js/2.bdb1f6ee.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.4ba95723.chunk.js"
+  ]
+}
