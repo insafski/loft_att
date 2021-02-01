@@ -10,7 +10,7 @@ import Hidden from "@material-ui/core/Hidden";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 import PageImage from "../../components/pageImage";
 import Breadcrumb from "../../components/breadcrumbs";
 import { withPage } from "../../components/page";
