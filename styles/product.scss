@@ -1,0 +1,37 @@
+.color-block {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgb(128, 130, 143);
+    overflow: hidden;
+
+    & > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__black {
+        background-color: #000;
+    }
+    &__white {
+        background-color: #fff;
+    }
+    &__gray {
+        background-color: #ccc;
+    }
+    &__blue {
+        background-color: #006;
+    }
+}
+
+.product__character {
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding: 0;
+        display: block;
+        letter-spacing: 1px;
+    }
+}

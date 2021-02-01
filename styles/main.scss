@@ -1,0 +1,23 @@
+.main-page {
+
+    h3 {
+        margin-top: 60px;
+    }
+
+    &__link {
+        color: #fff;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+        border: 2px solid white;
+        background: #232323;
+        border-radius: 10px;
+        padding: 5px 15px;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: #474747;
+            cursor: pointer;
+        }
+    }
+}

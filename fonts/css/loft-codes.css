@@ -1,0 +1,19 @@
+
+.att-phone:before { content: '\e800'; } /* '' */
+.att-home:before { content: '\e801'; } /* '' */
+.att-search:before { content: '\e802'; } /* '' */
+.att-basket:before { content: '\e803'; } /* '' */
+.att-truck:before { content: '\e804'; } /* '' */
+.att-share:before { content: '\e805'; } /* '' */
+.att-heart-empty:before { content: '\e806'; } /* '' */
+.att-heart:before { content: '\e807'; } /* '' */
+.att-comment-alt2:before { content: '\e808'; } /* '' */
+.att-clock:before { content: '\e809'; } /* '' */
+.att-cog-alt:before { content: '\e80a'; } /* '' */
+.att-dollar:before { content: '\f155'; } /* '' */
+.att-rouble:before { content: '\f158'; } /* '' */
+.att-thumbs-up-alt:before { content: '\f164'; } /* '' */
+.att-instagram:before { content: '\f16d'; } /* '' */
+.att-vkontakte:before { content: '\f189'; } /* '' */
+.att-whatsapp:before { content: '\f232'; } /* '' */
+.att-telegram:before { content: '\f2c6'; } /* '' */

@@ -1,0 +1,269 @@
+{
+    "menu": [
+        {
+            "title": "Каталог",
+            "to": "/catalog"
+        },
+        {
+            "title": "Оплата и доставка",
+            "to": "/payment"
+        },
+        {
+            "title": "О нас",
+            "to": "/about"
+        }
+    ],
+    "pageMap": {
+        "catalog": "Каталог",
+        "payment": "Оплата и доставка",
+        "about": "О нас"
+    },
+    "catalogPages": [
+        "tables",
+        "wood-racks",
+        "shelves",
+        "shoe-racks",
+        "racks",
+        "braziers"
+    ],
+    "productMap": {
+        "tables": "Столы",
+        "wood-racks": "Дровницы",
+        "shelves": "Полки",
+        "shoe-racks": "Обувницы",
+        "racks": "Стеллажи",
+        "braziers": "Мангалы"
+    },
+    "categories": [
+        {
+            "title": "Столы",
+            "price": "от 4000",
+            "description": "Пиздатое описание",
+            "to": "catalog/tables",
+            "image": "https://aviva-mebel.ru/image/catalog/stolloftm/_dsc0238_kop.jpg"
+        },
+        {
+            "title": "Дровницы",
+            "price": "от 4000",
+            "description": "Пиздатое описание",
+            "to": "catalog/wood-racks",
+            "image": "https://royally.ru/Files/pt/picture/1217/39_1513954428.jpg"
+        },
+        {
+            "title": "Полки",
+            "price": "от 2000",
+            "description": "Пиздатое описание",
+            "to": "catalog/shelves",
+            "image": "https://royally.ru/Files/pt/picture/1117/20_1510915646.jpg"
+        },
+        {
+            "title": "Обувницы",
+            "price": "от 4500",
+            "description": "Пиздатое описание",
+            "to": "catalog/shoe-racks",
+            "image": "https://25.img.avito.st/640x480/5884895125.jpg"
+        },
+        {
+            "title": "Стеллажи",
+            "price": "от 9000",
+            "description": "Пиздатое описание",
+            "to": "catalog/racks",
+            "image": "https://rj-mebel.ru/wp-content/uploads/2017/11/%D0%A1%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D0%B6-%D0%B2-%D1%81%D1%82%D0%B8%D0%BB%D0%B5-%D0%BB%D0%BE%D1%84%D1%82-%D0%91%D0%B0%D1%83%D0%BD%D0%B4.jpg"
+        },
+        {
+            "title": "Мангалы",
+            "price": "от 4000",
+            "description": "Пиздатое описание",
+            "to": "catalog/braziers",
+            "image": "https://unitpenza.ru/wp-content/uploads/2020/06/mangal-loft-2-stol-cb.jpg"
+        }
+    ],
+    "catalog": {
+        "tables": {
+            "catalog": [
+                {
+                    "alt": "Стол",
+                    "src": "https://i3.wp.com/epoksidka.com/wp-content/uploads/2020/06/stol-konsol-iz-epoxidnoi-smoly-1024x682-1.jpg"
+                },
+                {
+                    "alt": "Стол",
+                    "src": "https://ahmir.ru/images/slebriver/005a.jpg"
+                },
+                {
+                    "alt": "Стол",
+                    "src": "https://dorofeybrychov.ru/assets/redactor/OG/epoksid.jpg"
+                },
+                {
+                    "alt": "Стол",
+                    "src": "https://dorofeybrychov.ru/assets/redactor/OG/epoksid.jpg"
+                }
+            ],
+            "title": "Стол из эпоксидной смолы",
+            "price": "45 500",
+            "saleText": "Акция до 28.02.2021",
+            "salePrice": "50 000",
+            "salePercent": "-10 %",
+            "availability": "Под заказ:",
+            "buildTime": "от 15-х рабочих дней.",
+            "materials": "Материалы: сталь, дерево сосна, эпоксидная смола",
+            "sizes": [
+                {
+                    "size": 130,
+                    "title": "Длина"
+                },
+                {
+                    "size": 100,
+                    "title": "Ширина"
+                },
+                {
+                    "size": 70,
+                    "title": "Высота"
+                }
+            ],
+            "colors": [
+                "black",
+                "white",
+                "gray",
+                "blue"
+            ],
+            "description": ""
+        },
+        "wood-racks": {
+            "catalog": [
+                {
+                    "alt": "Дровница",
+                    "src": "https://royally.ru/Files/pt/picture/1217/39_1513954428.jpg"
+                }
+            ],
+            "title": "Дровницы лофт",
+            "price": "5 000",
+            "saleText": "",
+            "salePrice": "",
+            "availability": "Под заказ:",
+            "buildTime": "от 3-х рабочих дней.",
+            "materials": "Материалы: сталь, дерево сосна",
+            "sizes": [
+                {
+                    "size": 130,
+                    "title": "Длина"
+                },
+                {
+                    "size": 100,
+                    "title": "Ширина"
+                },
+                {
+                    "size": 70,
+                    "title": "Высота"
+                }
+            ],
+            "colors": [
+                "black",
+                "white",
+                "gray",
+                "blue"
+            ]
+        },
+        "shelves": {
+            "catalog": [
+                {
+                    "alt": "Полка",
+                    "src": "https://royally.ru/Files/pt/picture/1117/20_1510915646.jpg"
+                },
+                {
+                    "alt": "Полка",
+                    "src": "https://cs2.livemaster.ru/storage/12/58/a8faea2d7e1669f45729b4d5b03a--shelves-wall-shelves-in-loft-style.jpg"
+                },
+                {
+                    "alt": "Полка",
+                    "src": "https://images.ru.prom.st/780582961_loft-polka-nastennaya.jpg"
+                }
+            ],
+            "title": "Полки лофт",
+            "price": "от 2 000",
+            "saleText": "",
+            "salePrice": "",
+            "availability": "Под заказ:",
+            "buildTime": "от 3-х рабочих дней.",
+            "materials": "Материалы: сталь, дерево сосна",
+            "colors": [
+                "black",
+                "white",
+                "gray",
+                "blue"
+            ]
+        },
+        "shoe-racks": {
+            "catalog": [
+                {
+                    "alt": "Обувница",
+                    "src": "https://25.img.avito.st/640x480/5884895125.jpg"
+                }
+            ],
+            "title": "Обувницы",
+            "price": "от 4 500",
+            "saleText": "",
+            "salePrice": "",
+            "availability": "Под заказ:",
+            "buildTime": "от 3-х рабочих дней.",
+            "materials": "Материалы: сталь",
+            "colors": [
+                "black",
+                "white",
+                "gray",
+                "blue"
+            ]
+        },
+        "racks": {
+            "catalog": [
+                {
+                    "alt": "Стеллаж",
+                    "src": "https://rj-mebel.ru/wp-content/uploads/2017/11/%D0%A1%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D0%B6-%D0%B2-%D1%81%D1%82%D0%B8%D0%BB%D0%B5-%D0%BB%D0%BE%D1%84%D1%82-%D0%91%D0%B0%D1%83%D0%BD%D0%B4.jpg"
+                },
+                {
+                    "alt": "Стеллажи",
+                    "src": "https://www.lofthearts.ru/image/data/products/loft_hall_racks.jpg"
+                },
+                {
+                    "alt": "Стеллажи",
+                    "src": "https://ae01.alicdn.com/kf/HTB1jYIOcROD3KVjSZFFq6An9pXaX.jpg_q50.jpg"
+                }
+            ],
+            "title": "Стеллажи",
+            "price": "от 9 000",
+            "saleText": "",
+            "salePrice": "",
+            "availability": "Под заказ:",
+            "buildTime": "от 5-ти рабочих дней.",
+            "materials": "Материалы: сталь, дерево",
+            "colors": [
+                "black",
+                "white",
+                "gray",
+                "blue"
+            ]
+        },
+        "braziers": {
+            "catalog": [
+                {
+                    "alt": "Мангал",
+                    "src": "https://i.pinimg.com/originals/7c/de/c3/7cdec3e2a0f87205d086a014de2898df.jpg"
+                },
+                {
+                    "alt": "Мангал",
+                    "src": "https://unitpenza.ru/wp-content/uploads/2020/06/mangal-loft-2-stol-cb.jpg"
+                }
+            ],
+            "title": "Дизайнерский мангал",
+            "price": "от 4 000",
+            "saleText": "",
+            "salePrice": "",
+            "availability": "Под заказ:",
+            "buildTime": "от 3-х рабочих дней.",
+            "materials": "Материалы: сталь",
+            "colors": [
+                "black",
+                "gray"
+            ]
+        }
+    }
+}

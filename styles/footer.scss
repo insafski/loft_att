@@ -1,0 +1,38 @@
+.footer {
+    background: #4a5261;
+    display: block;
+    color: #fff;
+    flex-grow: 1;
+    margin-top: 40px;
+    
+    &__content {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    &__info {
+        padding-bottom: 8px;
+    }
+
+    .ddd::before{
+        margin: 0;
+    }
+
+    &__menu {
+        a {
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #FFA31A;
+            }
+        }
+    }
+
+    .att-instagram {
+        border-radius: 4px;
+
+        &:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        }
+    }
+}

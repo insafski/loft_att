@@ -1,0 +1,27 @@
+{
+  "name": "loft_att_v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "final-form": "^4.20.1",
+    "final-form-material-ui": "^0.3.0",
+    "lodash": "^4.17.20",
+    "next": "10.0.6",
+    "pure-react-carousel": "^1.27.6",
+    "react": "17.0.1",
+    "react-device-detect": "^1.15.0",
+    "react-dom": "17.0.1",
+    "react-final-form": "^6.5.2",
+    "react-parallax": "^3.1.2",
+    "sass": "^1.32.5",
+    "stimulus": "^2.0.0",
+    "swiper": "^6.4.10"
+  }
+}

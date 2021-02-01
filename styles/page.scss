@@ -1,0 +1,20 @@
+.page-content {
+    margin-top: -20px;
+
+    .page__title {
+        margin-top: 40px;
+        margin-bottom: 16px;
+    }
+
+    h6 {
+        margin-top: 1rem;
+    }
+
+    // p::first-letter {
+        // margin-left: 16px;
+    // }
+
+    a:hover {
+        color: #E3C280 !important;
+    }
+}

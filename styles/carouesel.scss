@@ -1,0 +1,161 @@
+.carousel {
+	&__container {
+		position: relative;
+		overflow: hidden;
+		border-radius: 4px;
+
+		&:hover {
+			.carousel__button {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 0;
+		width: 	6%;
+		height: 100%;
+		background-color: transparent;
+		padding: 0 16px;
+		transition: opacity 0.2s ease;
+
+		@media (min-width: 992px) {
+			width: 	38%;
+			opacity: 0;
+		}
+
+		&:disabled {
+			opacity: 0 !important;
+			pointer-events: none;
+		}
+
+		&:before {
+			content: "";
+			top: 0;
+			bottom: 0;
+			height: 100%;
+			position: absolute;
+			width: 40%;
+			background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.20211834733893552) 60%, rgba(0,0,0,0.4990371148459384) 100%);
+			transition: all 0.6s ease;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 3px solid;
+			border-color: white;
+			z-index: 3;
+			background: none;
+			transition: all 0.3s ease;
+			position: absolute;
+		}
+
+		&:hover {
+			&:before {
+				width: 40%;
+			}
+		}
+
+		&_back {
+			&:before {
+				left: 0;
+				transform: translateX(0px) rotate(180deg);
+			}
+
+			&:after {
+				left: 16px;
+				border-top: transparent;
+				border-right: transparent;
+				transform: translate(50%, -50%) rotate(45deg);
+			}
+
+			&:hover {
+				&:before {
+					transform: translateX(-10px) rotate(180deg);
+				}
+
+				&:after {
+					transform: translate(0%, -50%) rotate(45deg);
+				}
+			}
+		}
+
+		&_next {
+			right: 0;
+			transition: all 0.3s ease;
+
+			&:before {
+				width: 30%;
+				right: 0;
+				transform: translateX(0px);
+			}
+
+			&:after {
+				right: 16px;
+				border-bottom: transparent;
+				border-left: transparent;
+				transform: translate(-50%, -50%) rotate(45deg);
+			}
+
+			&:hover {
+				&:before {
+					transform: translateX(10px);
+				}
+				&:after {
+					transform: translate(0%, -50%) rotate(45deg);
+				}
+			}
+		}
+	}
+
+	&__image {
+		object-fit: cover;
+	}
+
+	&__container_single {
+		.carousel__image {
+			object-fit: cover;
+		}
+	}
+
+	&__inner-slide {
+		overflow: hidden;
+	}
+
+	&__previews {
+		margin-top: 16px;
+
+		.carousel {
+			&__button {
+				width: 6%;
+			}
+			&__slider-tray-wrapper {
+				margin: 0 -16px;
+			}
+			&__image {
+				padding: 0 8px;
+				transition: all 0.3s ease;
+				cursor: pointer;
+
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}
+
+.sale {
+	width: 66px;
+    height: 25px;
+    background: rgb(115, 65, 196);
+    position: absolute;
+    right: 0;
+	top: 10%;
+	color: #fff;
+	text-align: center;
+}

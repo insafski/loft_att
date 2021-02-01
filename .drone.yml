@@ -1,0 +1,41 @@
+kind: pipeline
+name: build
+
+steps:
+
+  - name: yarn-install
+    image: node:14.5
+    commands:
+      - yarn
+    when:
+      branch: [master]
+
+  - name: build
+    image: node:14.5
+    depends_on: [yarn-install]
+    environment:
+      REACT_APP_CALL_HOST: https://oy-chet.herokuapp.com
+      REACT_APP_INSTAGRAM_TOKEN: 
+        from_secret: instagram_token
+    commands:
+      - yarn build
+    when:
+      branch: [master]
+
+  - name: publish
+    image: cschlosser/drone-ftps
+    depends_on: [yarn-install,build]
+    environment:
+      FTP_USERNAME:
+        from_secret: ftp_username
+      FTP_PASSWORD:
+        from_secret: ftp_password
+      PLUGIN_HOSTNAME:
+        from_secret: hostname
+      PLUGIN_SECURE: false
+      PLUGIN_VERIFY: false
+      PLUGIN_CLEAN_DIR: true
+      PLUGIN_DEST_DIR: /loftstylelife/public_html
+      PLUGIN_SRC_DIR: /out/
+    when:
+      branch: [master]
