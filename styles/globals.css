@@ -110,3 +110,20 @@ a {
 .paeg404__link:hover {
     color: #E3C280 !important;
 }
+
+.modal__call input {
+  display: block;
+
+  width: 100%;
+  padding: 18px 14px;
+
+  border-radius: 4px;
+
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  outline: none;
+  margin-bottom: 8px;
+}
+
+.modal__call input:first-child {
+  margin-bottom: 16px;
+}

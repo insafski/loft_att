@@ -118,7 +118,7 @@ export default function ModalForm({ label = "Заказать звонок" }) {
             <Modal
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
-                className={classes.modal}
+                className={`${classes.modal} modal__call`}
                 open={open}
                 onClose={() => setOpen(false)}
                 closeAfterTransition
@@ -155,7 +155,7 @@ export default function ModalForm({ label = "Заказать звонок" }) {
                                         variant="outlined"
                                         fullWidth
                                         label="Ваше имя"
-                                        component={TextField}
+                                        component={"input"}
                                         type="text"
                                         placeholder="Ваше имя"
                                     />
@@ -166,7 +166,7 @@ export default function ModalForm({ label = "Заказать звонок" }) {
                                         margin="normal"
                                         fullWidth
                                         label="Телефон"
-                                        component={TextField}
+                                        component={"input"}
                                         type="tel"
                                         placeholder="Телефон"
                                     />
