@@ -1,6 +1,5 @@
 
 import { Fragment } from "react";
-import get from "lodash/get";
 
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
@@ -13,9 +12,8 @@ import Zoom from "@material-ui/core/Zoom";
 import Layout from "../../components/layout";
 import PageImage from "../../components/pageImage";
 import Breadcrumb from "../../components/breadcrumbs";
-import { withPage } from "../../components/page";
 import { CarouselGallery } from "../../components/carousel";
-// import ModalForm from "../../components/modal";
+import ModalForm from "../../components/modal";
 
 // import dr from "../../images/drovnica.jpg";
 
@@ -141,7 +139,7 @@ export default function Product({ product }) {
                                     x
                                 >
                                     {price
-                                        ? `${price} ₽`
+                                        ? `от ${price} ₽`
                                         : "Уточните по телефону"}
                                 </Typography>
                                 {salePrice && (
@@ -268,11 +266,11 @@ export default function Product({ product }) {
                         <br />
                         <Divider />
                         <br />
-                        {/* <Grid container justify={"center"}>
+                        <Grid container justify={"center"}>
                             <Grid item>
-                                <ModalForm />
+                                { typeof window !== "undefined" && <ModalForm /> }
                             </Grid>
-                        </Grid> */}
+                        </Grid>
                     </Grid>
                 </Grid>
                 <br />
@@ -371,6 +369,8 @@ export async function getStaticProps({ params }) {
     // If the route is like /posts/1, then params.id is 1
     const product = await data.catalog[params.slug];
 
+    const pageSeo = await data.pagesSeo[params.slug];
+
     // Pass post data to the page via props
-    return { props: { product } };
+    return { props: { product, pageSeo } };
 }

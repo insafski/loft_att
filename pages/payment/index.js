@@ -1,17 +1,12 @@
 import Container from "@material-ui/core/Container";
 import { Typography } from "@material-ui/core";
 
-import { withPage } from "../../components/page";
-// import PageImage from "../../components/pageImage";
 import Breadcrumb from "../../components/breadcrumbs";
 import PageTitle from "../../components/title";
 import Layout from "../../components/layout";
+import data from "../../data/index.json";
 
-const seo = {
-    title: "Оплата и доставка",
-};
-
-const payment = () => {
+export default function Payment() {
     return (
         <Layout>
             {/* <PageImage
@@ -30,10 +25,6 @@ const payment = () => {
         </Layout>
     );
 };
-
-const Payment = withPage(payment, seo);
-
-export default Payment;
 
 function PayAndDelivery() {
     return (
@@ -80,4 +71,13 @@ function PayAndDelivery() {
             </Typography>
         </div>
     );
+}
+
+export async function getStaticProps({ params }) {
+    // params contains the post `id`.
+    // If the route is like /posts/1, then params.id is 1
+    const pageSeo = await data.pagesSeo["payment"];
+
+    // Pass post data to the page via props
+    return { props: { pageSeo } };
 }

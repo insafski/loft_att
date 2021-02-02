@@ -11,18 +11,11 @@ import Typography from "@material-ui/core/Typography";
 
 import Breadcrumb from "../../components/breadcrumbs";
 import PageImage from "../../components/pageImage";
-import { withPage } from "../../components/page";
 import PageTitle from "../../components/title";
-
 import Layout from "../../components/layout";
-
 import data from "../../data/index.json";
 
-const seo = {
-    title: "Галерея",
-};
-
-const gallery = () => {
+export default function Catalog() {
     return (
         <Layout>
             <PageImage
@@ -45,10 +38,6 @@ const gallery = () => {
         </Layout>
     );
 };
-
-const Catalog = withPage(gallery, seo);
-
-export default Catalog;
 
 const useStyles = makeStyles({
     root: {
@@ -103,4 +92,13 @@ function GalleryItems({ list }) {
             </Card>
         </Grid>
     ));
+}
+
+export async function getStaticProps({ params }) {
+    // params contains the post `id`.
+    // If the route is like /posts/1, then params.id is 1
+    const pageSeo = await data.pagesSeo["catalog"];
+
+    // Pass post data to the page via props
+    return { props: { pageSeo } };
 }

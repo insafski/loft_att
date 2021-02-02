@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Form, Field } from "react-final-form";
-import { TextField } from "final-form-material-ui";
+// import { TextField } from "final-form-material-ui";
 import get from "lodash/get";
+import TextField from "@material-ui/core/TextField";
 
 import Modal from "@material-ui/core/Modal";
 import Button from "@material-ui/core/Button";

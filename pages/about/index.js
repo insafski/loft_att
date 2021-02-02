@@ -8,15 +8,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import Breadcrumb from "../../components/breadcrumbs";
 import PageImage from "../../components/pageImage";
-import { withPage } from "../../components/page";
 import PageTitle from "../../components/title";
 import Layout from "../../components/layout";
-
-// import ModalForm from "../../components/modal";
-
-const seo = {
-    title: "О нас",
-};
+import ModalForm from "../../components/modal";
+import data from "../../data/index.json";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -40,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const AboutUs = () => {
+export default function About() {
     return (
         <Layout>
             <PageImage
@@ -61,10 +56,6 @@ const AboutUs = () => {
         </Layout>
     );
 };
-
-const About = withPage(AboutUs, seo);
-
-export default About;
 
 function AboutUsBlock() {
     const classes = useStyles();
@@ -191,7 +182,16 @@ function Contacts() {
                 Есть что обсудить? Закажи звонок
             </Typography>
             <br />
-            {/* <Typography align={"center"}><ModalForm label={"Перезвоните мне"}/></Typography> */}
+            <Typography align={"center"}><ModalForm label={"Перезвоните мне"}/></Typography>
         </div>
     );
+}
+
+export async function getStaticProps({ params }) {
+    // params contains the post `id`.
+    // If the route is like /posts/1, then params.id is 1
+    const pageSeo = await data.pagesSeo["about"];
+
+    // Pass post data to the page via props
+    return { props: { pageSeo } };
 }

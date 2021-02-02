@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Container from "@material-ui/core/Container";
 
 import Layout from "../components/layout";
@@ -7,6 +6,8 @@ import SimpleParallax from "../components/parallax";
 import WhyUs from  "../components/whyUs";
 import Instagram from "../components/instagram"; 
 import Mission from "../components/mission";
+
+import data from "../data/index.json";
 
 export default function Home() {
     return (
@@ -39,4 +40,13 @@ export default function Home() {
             </>
         </Layout>
     );
+}
+
+export async function getStaticProps({ params }) {
+    // params contains the post `id`.
+    // If the route is like /posts/1, then params.id is 1
+    const pageSeo = await data.pagesSeo["index"];
+
+    // Pass post data to the page via props
+    return { props: { pageSeo } };
 }

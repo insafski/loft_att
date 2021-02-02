@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://loftstylelife.ru
+
+# Sitemaps
+Sitemap: https://loftstylelife.ru/sitemap.xml

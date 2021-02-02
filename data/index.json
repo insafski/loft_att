@@ -82,29 +82,25 @@
         "tables": {
             "catalog": [
                 {
-                    "alt": "Стол",
-                    "src": "https://i3.wp.com/epoksidka.com/wp-content/uploads/2020/06/stol-konsol-iz-epoxidnoi-smoly-1024x682-1.jpg"
+                    "alt": "Стол в стиле лофт",
+                    "src": "https://aviva-mebel.ru/image/catalog/stolloftm/_dsc0238_kop.jpg"
                 },
                 {
-                    "alt": "Стол",
-                    "src": "https://ahmir.ru/images/slebriver/005a.jpg"
+                    "alt": "Стол в стиле лофт",
+                    "src": "https://static-sl.insales.ru/images/products/1/522/283468298/5dd6d2e16c86cb5b492d1065_-_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F_-_%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.jpg"
                 },
                 {
-                    "alt": "Стол",
-                    "src": "https://dorofeybrychov.ru/assets/redactor/OG/epoksid.jpg"
-                },
-                {
-                    "alt": "Стол",
-                    "src": "https://dorofeybrychov.ru/assets/redactor/OG/epoksid.jpg"
+                    "alt": "Стол в стиле лофт",
+                    "src": "https://entertheloft.com/wp-content/uploads-entertheloft/2014/12/heerenhuis_coffee_table_mesa_01.jpg"
                 }
             ],
-            "title": "Стол из эпоксидной смолы",
-            "price": "45 500",
-            "saleText": "Акция до 28.02.2021",
-            "salePrice": "50 000",
-            "salePercent": "-10 %",
+            "title": "Столы в стиле лофт",
+            "price": "4 000",
+            "saleText": "",
+            "salePrice": "",
+            "salePercent": "",
             "availability": "Под заказ:",
-            "buildTime": "от 15-х рабочих дней.",
+            "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь, дерево сосна, эпоксидная смола",
             "sizes": [
                 {
@@ -131,12 +127,12 @@
         "wood-racks": {
             "catalog": [
                 {
-                    "alt": "Дровница",
+                    "alt": "Дровница в стиле лофт",
                     "src": "https://royally.ru/Files/pt/picture/1217/39_1513954428.jpg"
                 }
             ],
             "title": "Дровницы лофт",
-            "price": "5 000",
+            "price": "4 000",
             "saleText": "",
             "salePrice": "",
             "availability": "Под заказ:",
@@ -166,20 +162,20 @@
         "shelves": {
             "catalog": [
                 {
-                    "alt": "Полка",
+                    "alt": "Полка в стиле лофт",
                     "src": "https://royally.ru/Files/pt/picture/1117/20_1510915646.jpg"
                 },
                 {
-                    "alt": "Полка",
+                    "alt": "Полка в стиле лофт",
                     "src": "https://cs2.livemaster.ru/storage/12/58/a8faea2d7e1669f45729b4d5b03a--shelves-wall-shelves-in-loft-style.jpg"
                 },
                 {
-                    "alt": "Полка",
+                    "alt": "Полка в стиле лофт",
                     "src": "https://images.ru.prom.st/780582961_loft-polka-nastennaya.jpg"
                 }
             ],
             "title": "Полки лофт",
-            "price": "от 2 000",
+            "price": "2 000",
             "saleText": "",
             "salePrice": "",
             "availability": "Под заказ:",
@@ -195,12 +191,12 @@
         "shoe-racks": {
             "catalog": [
                 {
-                    "alt": "Обувница",
+                    "alt": "Обувница в стиле лофт",
                     "src": "https://25.img.avito.st/640x480/5884895125.jpg"
                 }
             ],
             "title": "Обувницы",
-            "price": "от 4 500",
+            "price": "4 500",
             "saleText": "",
             "salePrice": "",
             "availability": "Под заказ:",
@@ -216,20 +212,20 @@
         "racks": {
             "catalog": [
                 {
-                    "alt": "Стеллаж",
+                    "alt": "Стеллаж в стиле лофт",
                     "src": "https://rj-mebel.ru/wp-content/uploads/2017/11/%D0%A1%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D0%B6-%D0%B2-%D1%81%D1%82%D0%B8%D0%BB%D0%B5-%D0%BB%D0%BE%D1%84%D1%82-%D0%91%D0%B0%D1%83%D0%BD%D0%B4.jpg"
                 },
                 {
-                    "alt": "Стеллажи",
+                    "alt": "Стеллаж в стиле лофт",
                     "src": "https://www.lofthearts.ru/image/data/products/loft_hall_racks.jpg"
                 },
                 {
-                    "alt": "Стеллажи",
+                    "alt": "Стеллаж в стиле лофт",
                     "src": "https://ae01.alicdn.com/kf/HTB1jYIOcROD3KVjSZFFq6An9pXaX.jpg_q50.jpg"
                 }
             ],
             "title": "Стеллажи",
-            "price": "от 9 000",
+            "price": "9 000",
             "saleText": "",
             "salePrice": "",
             "availability": "Под заказ:",
@@ -245,16 +241,16 @@
         "braziers": {
             "catalog": [
                 {
-                    "alt": "Мангал",
+                    "alt": "Мангал лофт",
                     "src": "https://i.pinimg.com/originals/7c/de/c3/7cdec3e2a0f87205d086a014de2898df.jpg"
                 },
                 {
-                    "alt": "Мангал",
+                    "alt": "Мангал лофт",
                     "src": "https://unitpenza.ru/wp-content/uploads/2020/06/mangal-loft-2-stol-cb.jpg"
                 }
             ],
             "title": "Дизайнерский мангал",
-            "price": "от 4 000",
+            "price": "4 000",
             "saleText": "",
             "salePrice": "",
             "availability": "Под заказ:",
@@ -264,6 +260,88 @@
                 "black",
                 "gray"
             ]
+        }
+    },
+    "pagesSeo": { 
+        "index": {
+            "path": "",
+            "title": "",
+            "description": "Производим мебель - проектируем и производим мебель в стиле лофт, мебель в стиле лофт. Индастриал мебель Loft style life",
+            "keywords": "Мебль казань, заказать мебель казань, Мебель ручного производства, мебель в стиле лофт",
+            "image": "https://aviva-mebel.ru/image/catalog/stolloftm/_dsc0238_kop.jpg",
+            "imageAlt": "Мебель ручного производства в стиле лофт"
+        },
+        "catalog": {
+            "path": "/catalog",
+            "title": "Каталог",
+            "description": "Каталог мебели в стиле лофт. Loft style life",
+            "keywords": "стол, дровница, полка, обувница, стеллаж, мангал",
+            "image": "https://aviva-mebel.ru/image/catalog/stolloftm/_dsc0238_kop.jpg",
+            "imageAlt": "Каталог мебели в стиле лофт"
+        },
+        "about": {
+            "path": "/about",
+            "title": "О нас",
+            "description": "",
+            "keywords": "",
+            "image": "",
+            "imageAlt": ""
+        },
+        "payment": {
+            "path": "/payment",
+            "title": "Оплата и доставка",
+            "description": "",
+            "keywords": "",
+            "image": "",
+            "imageAlt": ""
+        },
+        "tables": {
+            "path": "/catalog/tables",
+            "title": "Столы",
+            "description": "Столы в стиле лофт",
+            "keywords": "стол лофт, стол лофт казань, заказать стол лофт, купить стол лофт",
+            "image": "https://aviva-mebel.ru/image/catalog/stolloftm/_dsc0238_kop.jpg",
+            "imageAlt": "Стол в стиле лофт"
+        },
+        "wood-racks": {
+            "path": "/catalog/wood-racks",
+            "title": "Дровница",
+            "description": "Дровницы в стиле лофт",
+            "keywords": "дровница лофт, дровница лофт казань, заказать дровницу лофт, купить дровницу лофт",
+            "image": "https://royally.ru/Files/pt/picture/1217/39_1513954428.jpg",
+            "imageAlt": "Дровница в стиле лофт"
+        },
+        "shelves": {
+            "path": "/catalog/shelves",
+            "title": "Полки",
+            "description": "Полки в стиле лофт",
+            "keywords": "полка лофт, полка лофт казань, заказать полку лофт, купить полку лофт",
+            "image": "https://royally.ru/Files/pt/picture/1117/20_1510915646.jpg",
+            "imageAlt": "Полка в стиле лофт"
+        },
+        "shoe-racks": {
+            "path": "/catalog/shoe-racks",
+            "title": "Обувницы",
+            "description": "Обувницы в стиле лофт",
+            "keywords": "обувница лофт, обувница лофт казань, заказать обувницу лофт, купить обувницу лофт",
+            "image": "https://25.img.avito.st/640x480/5884895125.jpg",
+            "imageAlt": "Обувница в стиле лофт"
+        },
+        "racks": {
+            "path": "/catalog/racks",
+            "title": "Стеллажи",
+            "description": "Стеллажи в стиле лофт",
+            "keywords": "стеллаж лофт, стеллаж лофт казань, заказать стеллаж лофт, купить стеллаж лофт",
+            "image": "https://rj-mebel.ru/wp-content/uploads/2017/11/%D0%A1%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D0%B6-%D0%B2-%D1%81%D1%82%D0%B8%D0%BB%D0%B5-%D0%BB%D0%BE%D1%84%D1%82-%D0%91%D0%B0%D1%83%D0%BD%D0%B4.jpg",
+            "imageAlt": "Стеллажи в стиле лофт"
+        },
+        "braziers": {
+            "path": "/catalog/braziers",
+            "title": "Мангалы",
+            "description": "Мангалы в стиле лофт",
+            "keywords": "мангал лофт, стеллаж мангал казань, заказать мангал лофт, купить мангал лофт",
+            "image": "https://i.pinimg.com/originals/7c/de/c3/7cdec3e2a0f87205d086a014de2898df.jpg",
+            "imageAlt": "Мангалы в стиле лофт"
         }
     }
 }
