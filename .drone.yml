@@ -14,8 +14,8 @@ steps:
     image: node:14.5
     depends_on: [yarn-install]
     environment:
-      REACT_APP_CALL_HOST: https://oy-chet.herokuapp.com
-      REACT_APP_INSTAGRAM_TOKEN: 
+      NEXT_PUBLIC_CALL_HOST: https://oy-chet.herokuapp.com
+      NEXT_PUBLIC_INSTAGRAM_TOKEN: 
         from_secret: instagram_token
     commands:
       - yarn build
