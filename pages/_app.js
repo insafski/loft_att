@@ -4,9 +4,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import get from "lodash/get";
 
-import Router from "next/router";
-import withYM from "next-ym";
-
 import theme from "../components/theme";
 import { yaMetrika } from "../utils";
 
@@ -23,11 +20,10 @@ import "../styles/bredcrumbs.scss";
 import "../styles/product.scss";
 import "../styles/carouesel.scss";
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
 
     useEffect(() => {
         if (process.env.NODE_ENV !== "development") {
-            console.log("prod")
 			yaMetrika();
 		}
     }, []);
@@ -92,5 +88,3 @@ function MyApp({ Component, pageProps }) {
         </>
     );
 }
-
-export default withYM("71141620", Router)(MyApp);

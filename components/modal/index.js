@@ -47,6 +47,12 @@ export default function ModalForm({ label = "Заказать звонок" }) {
 
         setLoading(true);
 
+        if (typeof window !== "undefined" && window.ym && process.env.NODE_ENV === "production") {
+			// eslint-disable-next-line
+            ym(71141620, "reachGoal", "call_me");
+        }
+
+
         fetch(request, {
             headers,
             method: "POST",
@@ -99,7 +105,6 @@ export default function ModalForm({ label = "Заказать звонок" }) {
 
     // const mustBeNumber = (value) => (isNaN(value) ? "Допустимы только номера" : undefined);
     // const minValue = (min) => (value) => {
-    //     console.log(value.length);
     // return isNaN(value) || value.length === min ? undefined : `Должно быть ${min} цифр`;}
 
     // const composeValidators = (...validators) => value =>

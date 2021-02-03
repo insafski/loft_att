@@ -16,7 +16,6 @@
     "lodash": "^4.17.20",
     "next": "10.0.6",
     "next-sitemap": "^1.4.17",
-    "next-ym": "^2.3.5",
     "pure-react-carousel": "^1.27.6",
     "react": "17.0.1",
     "react-device-detect": "^1.15.0",
