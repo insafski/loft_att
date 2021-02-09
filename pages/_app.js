@@ -5,7 +5,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import get from "lodash/get";
 
 import theme from "../components/theme";
-import { yaMetrika } from "../utils";
+import { yaMetrika, googleAnalitycs } from "../utils";
 
 import "swiper/swiper.scss";
 import "swiper/components/effect-fade/effect-fade.scss";
@@ -24,7 +24,8 @@ export default function MyApp({ Component, pageProps }) {
 
     useEffect(() => {
         if (process.env.NODE_ENV !== "development") {
-			yaMetrika();
+            yaMetrika();
+            googleAnalitycs();
 		}
     }, []);
 

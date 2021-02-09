@@ -20,3 +20,25 @@ export function yaMetrika() {
         trackHash: true,
     });
 }
+
+export function googleAnalitycs() {
+    const ga = document.createElement("script");
+
+    ga.type = "text/javascript";
+    ga.async = !0;
+    ga.src = "https://www.googletagmanager.com/gtag/js?id=UA-189319994-1";
+    ga.onload = function () {
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+
+        gtag("config", "UA-189319994-1");
+    };
+
+    document.head.appendChild(ga);
+}
+
