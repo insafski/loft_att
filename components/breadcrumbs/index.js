@@ -95,7 +95,10 @@ function Breadcrumb() {
                                             itemProp="position"
                                             content={position}
                                         />
-                                        <span className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary">
+                                        <span
+                                            itemProp="name"
+                                            className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
+                                        >
                                             {name}
                                         </span>
                                     </a>
