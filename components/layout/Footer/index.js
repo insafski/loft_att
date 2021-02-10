@@ -64,21 +64,23 @@ export default function Footer() {
                         sm={3}
                         className={`${classes.root} footer__menu`}
                     >
-                        <Typography variant={"subtitle1"}>
-                            <Link href={"/catalog"}>Каталог</Link>
-                        </Typography>
-                        <Typography variant={"body2"}>
-                            <Link href={"/catalog/tables"}>Столы</Link>
-                        </Typography>
-                        <Typography variant={"body2"}>
-                            <Link href={"/catalog/racks"}>Стеллажи</Link>
-                        </Typography>
-                        <Typography variant={"body2"}>
-                            <Link href={"/catalog/shelves"}>Полки</Link>
-                        </Typography>
-                        <Typography variant={"body2"}>
-                            <Link href={"/catalog/shoe-racks"}>Обувницы</Link>
-                        </Typography>
+                        <nav>
+                            <Typography variant={"subtitle1"}>
+                                <Link href={"/catalog"}>Каталог</Link>
+                            </Typography>
+                            <Typography variant={"body2"}>
+                                <Link href={"/catalog/tables"}>Столы</Link>
+                            </Typography>
+                            <Typography variant={"body2"}>
+                                <Link href={"/catalog/racks"}>Стеллажи</Link>
+                            </Typography>
+                            <Typography variant={"body2"}>
+                                <Link href={"/catalog/shelves"}>Полки</Link>
+                            </Typography>
+                            <Typography variant={"body2"}>
+                                <Link href={"/catalog/shoe-racks"}>Обувницы</Link>
+                            </Typography>
+                        </nav>
                     </Grid>
                     <Grid
                         item

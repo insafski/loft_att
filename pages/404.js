@@ -1,13 +1,13 @@
 import Link from "next/link";
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 
+import MyContainer from "../components/MyContainer";
 import Layout from "../components/layout";
 
 export default function Custom404() {
     return (
         <Layout>
-            <Container maxWidth={"md"} className={"main-page"}>
+            <MyContainer maxWidth={"md"} className={"main-page"}>
                 <div style={{ marginTop: 200 }}>
                     <Typography
                         component={"h1"}
@@ -37,7 +37,7 @@ export default function Custom404() {
                         .
                     </Typography>
                 </div>
-            </Container>
+            </MyContainer>
         </Layout>
     );
 }

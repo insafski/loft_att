@@ -2,13 +2,13 @@
 import { Fragment } from "react";
 
 import Grid from "@material-ui/core/Grid";
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Hidden from "@material-ui/core/Hidden";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 
+import MyContainer from "../../components/MyContainer";
 import Layout from "../../components/layout";
 import PageImage from "../../components/pageImage";
 import Breadcrumb from "../../components/breadcrumbs";
@@ -45,7 +45,7 @@ export default function Product({ product }) {
                 }
                 title={"Каталог"}
             />
-            <Container
+            <MyContainer
                 maxWidth={"md"}
                 style={{
                     marginTop: 100,
@@ -268,7 +268,7 @@ export default function Product({ product }) {
                         <br />
                         <Grid container justify={"center"}>
                             <Grid item>
-                                { typeof window !== "undefined" && <ModalForm /> }
+                                {typeof window !== "undefined" && <ModalForm />}
                             </Grid>
                         </Grid>
                     </Grid>
@@ -324,7 +324,7 @@ export default function Product({ product }) {
                         </Grid>
                     </Grid>
                 )}
-            </Container>
+            </MyContainer>
         </Layout>
     );
 };

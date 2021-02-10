@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 
 import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
@@ -9,6 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 
+import MyContainer from "../../components/MyContainer";
 import Breadcrumb from "../../components/breadcrumbs";
 import PageImage from "../../components/pageImage";
 import PageTitle from "../../components/title";
@@ -28,13 +28,13 @@ export default function Catalog() {
                     },
                 ]}
             />
-            <Container maxWidth={"md"}>
+            <MyContainer maxWidth={"md"}>
                 <Breadcrumb />
                 <PageTitle component="h1">Список товаров</PageTitle>
                 <Grid container spacing={3}>
                     <GalleryItems list={data.categories} />
                 </Grid>
-            </Container>
+            </MyContainer>
         </Layout>
     );
 };

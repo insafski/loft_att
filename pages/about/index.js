@@ -1,16 +1,17 @@
 import Link from "next/link";
 
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import { makeStyles } from "@material-ui/core/styles";
 
+import MyContainer from "../../components/MyContainer";
 import Breadcrumb from "../../components/breadcrumbs";
 import PageImage from "../../components/pageImage";
 import PageTitle from "../../components/title";
 import Layout from "../../components/layout";
 import ModalForm from "../../components/modal";
+
 import data from "../../data/index.json";
 
 const useStyles = makeStyles((theme) => ({
@@ -47,12 +48,19 @@ export default function About() {
                     },
                 ]}
             />
-            <Container maxWidth={"md"}>
+            <MyContainer maxWidth={"md"}>
                 <Breadcrumb />
+            </MyContainer>
+
+            <MyContainer maxWidth={"md"}>
                 <AboutUsBlock />
+            </MyContainer>
+            <MyContainer maxWidth={"md"}>
                 <HowItsMade />
+            </MyContainer>
+            <MyContainer maxWidth={"md"}>
                 <Contacts />
-            </Container>
+            </MyContainer>
         </Layout>
     );
 };

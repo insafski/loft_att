@@ -1,6 +1,6 @@
-import Container from "@material-ui/core/Container";
 import { Typography } from "@material-ui/core";
 
+import MyContainer from "../../components/MyContainer";
 import Breadcrumb from "../../components/breadcrumbs";
 import PageTitle from "../../components/title";
 import Layout from "../../components/layout";
@@ -18,10 +18,12 @@ export default function Payment() {
                     },
                 ]}
             /> */}
-            <Container maxWidth={"md"} style={{ marginTop: 120 }}>
+            <MyContainer maxWidth={"md"} style={{ marginTop: 120 }}>
                 <Breadcrumb />
+            </MyContainer>
+            <MyContainer maxWidth={"md"}>
                 <PayAndDelivery />
-            </Container>
+            </MyContainer>
         </Layout>
     );
 };
@@ -30,7 +32,7 @@ function PayAndDelivery() {
     return (
         <div style={{ marginTop: 40 }}>
             <PageTitle component={"h1"}>Оплата и доставка</PageTitle>
-            <Typography variant={"h6"}>
+            <Typography component="h2" variant={"h6"}>
                 Для вашего удобства мы предлагаем несколько способов оплаты:
             </Typography>
             <Typography variant={"body1"}>
@@ -38,7 +40,9 @@ function PayAndDelivery() {
                 Альфа-банк, Тинькофф, ВТБ и другие).
             </Typography>
             <Typography variant={"body1"}>Оплата при получении.</Typography>
-            <Typography variant={"h6"}>Доставка</Typography>
+            <Typography component="h2" variant={"h6"}>
+                Доставка
+            </Typography>
             <Typography variant={"body1"}>
                 Доставка по городу Казань осуществляется ежедневно с 18:00 до
                 22:00 часов.
@@ -47,7 +51,7 @@ function PayAndDelivery() {
                 Стоимость доставки от 500 рублей в зависимости от размеров
                 изделия.
             </Typography>
-            <Typography variant={"h6"}>
+            <Typography component="h2" variant={"h6"}>
                 Условия доставки транспортными компаниями
             </Typography>
             <Typography variant={"body1"}>

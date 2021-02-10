@@ -1,5 +1,4 @@
-import Container from "@material-ui/core/Container";
-
+import MyContainer from "../components/MyContainer";
 import Layout from "../components/layout";
 import PageImage from "../components/pageImage";
 import SimpleParallax from "../components/parallax";
@@ -31,11 +30,15 @@ export default function Home() {
                         },
                     ]}
                 />
-                <Container maxWidth={"md"} className={"main-page"}>
+                <MyContainer maxWidth={"md"} className={"main-page"}>
                     <SimpleParallax />
+                </MyContainer>
+                <MyContainer maxWidth={"md"} className={"main-page"}>
                     <WhyUs />
+                </MyContainer>
+                <MyContainer maxWidth={"md"} className={"main-page"}>
                     <Instagram />
-                </Container>
+                </MyContainer>
                 <Mission />
             </>
         </Layout>

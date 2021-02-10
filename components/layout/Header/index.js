@@ -4,6 +4,7 @@ import Container from "@material-ui/core/Container";
 import Hidden from "@material-ui/core/Hidden";
 import { useRouter } from "next/router";
 import { get, compact } from "lodash";
+// import Image from "next/image";
 
 import data from "../../../data/index.json";
 import { MibileMenu } from "./miboleMenu";
@@ -22,7 +23,9 @@ export default function Header() {
                         <Menu />
                     </Hidden>
                     <Hidden mdUp>
-                        <MibileMenu />
+                        <nav>
+                            <MibileMenu />
+                        </nav>
                     </Hidden>
                 </header>
             </Hidden>
@@ -48,38 +51,44 @@ function Menu() {
                         <a>Loft Style Life</a>
                     </Link>
                 </h1>
-                <ul
-                    itemScope
-                    itemType="http://schema.org/SiteNavigationElement"
-                >
-                    {data.menu.map(
-                        ({ title = "", to = "/", exact = false }, idx) => (
-                            <li key={idx}>
-                                <Link
-                                    // exact={exact}
-                                    // activeClassName={"link--item_selected"}
-                                    href={to}
-                                >
-                                    <a
-                                        itemProp="url"
-                                        className={slug === to.replace("/", "") ? "link--item_selected" : ""}
+                <nav>
+                    <ul
+                        itemScope
+                        itemType="http://schema.org/SiteNavigationElement"
+                    >
+                        {data.menu.map(
+                            ({ title = "", to = "/", exact = false }, idx) => (
+                                <li key={idx}>
+                                    <Link
+                                        // exact={exact}
+                                        // activeClassName={"link--item_selected"}
+                                        href={to}
                                     >
-                                        <span itemProp={"name"}>
-                                            {title.toUpperCase()}
-                                        </span>
-                                        <meta
-                                            itemProp="position"
-                                            content={idx + 1}
-                                        />
-                                    </a>
-                                </Link>
-                            </li>
-                        )
-                    )}
-                    <li>
-                        <Phone />
-                    </li>
-                </ul>
+                                        <a
+                                            itemProp="url"
+                                            className={
+                                                slug === to.replace("/", "")
+                                                    ? "link--item_selected"
+                                                    : ""
+                                            }
+                                        >
+                                            <span itemProp={"name"}>
+                                                {title.toUpperCase()}
+                                            </span>
+                                            <meta
+                                                itemProp="position"
+                                                content={idx + 1}
+                                            />
+                                        </a>
+                                    </Link>
+                                </li>
+                            )
+                        )}
+                        <li>
+                            <Phone />
+                        </li>
+                    </ul>
+                </nav>
             </Container>
         </div>
     );
