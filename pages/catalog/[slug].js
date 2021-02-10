@@ -15,6 +15,8 @@ import Breadcrumb from "../../components/breadcrumbs";
 import { CarouselGallery } from "../../components/carousel";
 import ModalForm from "../../components/modal";
 
+import get from "lodash/get";
+
 // import dr from "../../images/drovnica.jpg";
 
 import data from "../../data/index.json";
@@ -27,6 +29,7 @@ export default function Product({ product }) {
         salePrice = "",
         saleText = "",
         salePercent = "",
+        availabilityMC = "InStock",
         availability = "Под заказ",
         buildTime = "Сроки изготовления уточняйте по телефону",
         materials = "",
@@ -60,10 +63,7 @@ export default function Product({ product }) {
                     itemScope
                 >
                     <meta itemProp="name" content={title} />
-                    <link
-                        itemProp="image"
-                        // href={get(productParams, "catalog[0].src", "")}
-                    />
+                    <link itemProp="image" href={get(catalog, "[0].src", "")} />
                     <meta itemProp="description" content={seoDescription} />
 
                     <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
@@ -123,6 +123,10 @@ export default function Product({ product }) {
                                 itemType="http://schema.org/Offer"
                                 itemScope
                             >
+                                <meta
+                                    itemprop="availability"
+                                    href={`https://schema.org/${availabilityMC}`}
+                                />
                                 <meta itemProp="priceCurrency" content="RUB" />
                                 <meta itemProp="price" content={price} />
                                 {/* <meta
@@ -189,7 +193,7 @@ export default function Product({ product }) {
                                         letterSpacing: "1px",
                                     }}
                                 >
-                                    {`${availability} ${buildTime}`}
+                                    {`${availability}: ${buildTime}`}
                                 </Typography>
                             </Grid>
                         </Grid>

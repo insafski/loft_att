@@ -95,11 +95,12 @@
                 }
             ],
             "title": "Столы в стиле лофт",
-            "price": "4 000",
+            "price": "4000",
             "saleText": "",
             "salePrice": "",
             "salePercent": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь, дерево сосна, эпоксидная смола",
             "sizes": [
@@ -132,10 +133,11 @@
                 }
             ],
             "title": "Дровницы лофт",
-            "price": "4 000",
+            "price": "4000",
             "saleText": "",
             "salePrice": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь, дерево сосна",
             "sizes": [
@@ -175,10 +177,11 @@
                 }
             ],
             "title": "Полки лофт",
-            "price": "2 000",
+            "price": "2000",
             "saleText": "",
             "salePrice": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь, дерево сосна",
             "colors": [
@@ -196,10 +199,11 @@
                 }
             ],
             "title": "Обувницы",
-            "price": "4 500",
+            "price": "4500",
             "saleText": "",
             "salePrice": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь",
             "colors": [
@@ -225,10 +229,11 @@
                 }
             ],
             "title": "Стеллажи",
-            "price": "9 000",
+            "price": "9000",
             "saleText": "",
             "salePrice": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 5-ти рабочих дней.",
             "materials": "Материалы: сталь, дерево",
             "colors": [
@@ -250,10 +255,11 @@
                 }
             ],
             "title": "Дизайнерский мангал",
-            "price": "4 000",
+            "price": "4000",
             "saleText": "",
             "salePrice": "",
-            "availability": "Под заказ:",
+            "availabilityMC": "Pre-order",
+            "availability": "Под заказ",
             "buildTime": "от 3-х рабочих дней.",
             "materials": "Материалы: сталь",
             "colors": [
