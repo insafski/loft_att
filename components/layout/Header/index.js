@@ -14,26 +14,15 @@ import { MibileMenu } from "./miboleMenu";
 export default function Header() {
     return (
         <>
-            <Hidden xsDown>
-                <header className="app-header">
-                    <Hidden smDown>
-                        <div className={`app-header__opacity`} />
-                    </Hidden>
-                    <Hidden smDown>
-                        <Menu />
-                    </Hidden>
-                    <Hidden mdUp>
-                        <nav>
-                            <MibileMenu />
-                        </nav>
-                    </Hidden>
-                </header>
-            </Hidden>
-            <Hidden only={["sm", "md", "lg", "xl"]}>
-                <header className="app-header_mobile">
+            <header>
+                <div className="app-header">
+                    <div className={`app-header__opacity`} />
+                    <Menu />
+                </div>
+                <div className="app-header_mobile">
                     <MibileMenu />
-                </header>
-            </Hidden>
+                </div>
+            </header>
         </>
     );
 }
