@@ -1,0 +1,14 @@
+RewriteEngine On
+
+RewriteBase /
+
+RewriteRule ^(catalog/tables) catalog/tables\.html [L]
+RewriteRule ^(catalog/wood-racks) catalog/wood-racks\.html [L]
+RewriteRule ^(catalog/shoe-racks) catalog/shoe-racks\.html [L]
+RewriteRule ^(catalog/shelves) catalog/shelves\.html [L]
+RewriteRule ^(catalog/racks) catalog/racks\.html [L]
+RewriteRule ^(catalog/braziers) catalog/braziers\.html [L]
+
+RewriteRule ^(catalog) catalog\.html [L]
+RewriteRule ^(payment) payment\.html [L]
+RewriteRule ^(about) about\.html [L]
