@@ -14,7 +14,7 @@ import { MibileMenu } from "./miboleMenu";
 export default function Header() {
     return (
         <>
-            <Hidden only={["sm", "md", "lg", "xl"]}>
+            <Hidden xsDown>
                 <header className="app-header">
                     <Hidden smDown>
                         <div className={`app-header__opacity`} />
