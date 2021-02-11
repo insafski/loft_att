@@ -2,7 +2,6 @@
   /* background-color: #282c34; */
   /* background: url("https://static.wixstatic.com/media/e2f9fe_6e4f08416e36478989b3649d67a650d4~mv2_d_5333_3993_s_4_2.jpg/v1/fill/w_2880,h_1530,al_c,q_90,usm_0.66_1.00_0.01/e2f9fe_6e4f08416e36478989b3649d67a650d4~mv2_d_5333_3993_s_4_2.webp"); */
   background-position: 50% 70%;
-  display: none;
   min-height: 60px;
   display: flex;
   flex-direction: column;
@@ -56,8 +55,8 @@
     justify-content: space-between;
   }
 
-  @media (min-width: 768px) {
-    display: block;
+  @media (max-width: 768px) {
+    display: none;
   }
 
   &_mobile {
