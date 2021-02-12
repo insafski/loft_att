@@ -12,3 +12,5 @@ RewriteRule ^(catalog/braziers) catalog/braziers\.html [L]
 RewriteRule ^(catalog) catalog\.html [L]
 RewriteRule ^(payment) payment\.html [L]
 RewriteRule ^(about) about\.html [L]
+
+ErrorDocument 404  https://loftstylelife.ru/404\.html
