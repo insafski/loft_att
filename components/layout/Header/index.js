@@ -5,9 +5,11 @@ import Hidden from "@material-ui/core/Hidden";
 import { useRouter } from "next/router";
 import { get, compact } from "lodash";
 // import Image from "next/image";
+import Image from "next/image";
 
 import data from "../../../data/index.json";
 import { MibileMenu } from "./miboleMenu";
+import Modal from "../../modal";
 
 // import "../../../styles/header.scss";
 
@@ -35,11 +37,15 @@ function Menu() {
     return (
         <div className={`app-header__menu`}>
             <Container maxWidth={"md"} className={"app-header__wrapper"}>
-                <h1 className={"logo"}>
                     <Link href={"/"}>
-                        <a>Loft Style Life</a>
+                        <img
+                            src="/logo2.png"
+                            alt="Picture of the author"
+                            width={300}
+                            height={60}
+                            className={"lolo"}
+                        />
                     </Link>
-                </h1>
                 <nav>
                     <ul
                         itemScope
@@ -74,7 +80,8 @@ function Menu() {
                             )
                         )}
                         <li>
-                            <Phone />
+                            <Modal />
+                            {/* <Phone /> */}
                         </li>
                     </ul>
                 </nav>

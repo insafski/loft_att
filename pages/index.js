@@ -7,11 +7,26 @@ import Instagram from "../components/instagram";
 import Mission from "../components/mission";
 
 import data from "../data/index.json";
+import { useEffect } from "react";
+// import OpenAPI from "@tinkoff/invest-openapi-js-sdk";
+// import OpenAPI = require('@tinkoff/invest-openapi-js-sdk');
+
+const apiURL = "https://api-invest.tinkoff.ru/openapi"
+const socketURL = "wss://api-invest.tinkoff.ru/openapi/md/v1/md-openapi/ws";
+const secretToken =
+    "t.z98Qwdke55tUREAp0UCv8ONZcGdnjlEeNCUVhsZim_Nxh7mjk_1Uqqu9iOCLGQY21yzp4EEYUZKYKmYHVFBLhw"; // токен для сандбокса
+
 
 export default function Home() {
+    useEffect(async () => {
+        //const api = new OpenAPI({ apiURL, secretToken, socketURL });
+
+        //const acc = await api.accounts();
+        //console.log(acc); // Комиссия за сделку
+    }, [])
     return (
         <Layout>
-            <>
+            <section className="cd-section visible">
                 <PageImage
                     items={[
                         {
@@ -30,17 +45,43 @@ export default function Home() {
                         },
                     ]}
                 />
+            </section>
+
+            <section className="cd-section">
                 <MyContainer maxWidth={"md"} className={"main-page"}>
                     <SimpleParallax />
                 </MyContainer>
+            </section>
+
+            <section className="cd-section">
                 <MyContainer maxWidth={"md"} className={"main-page"}>
                     <WhyUs />
                 </MyContainer>
+            </section>
+
+            <section className="cd-section">
                 <MyContainer maxWidth={"md"} className={"main-page"}>
                     <Instagram />
                 </MyContainer>
+            </section>
+
+            <section className="cd-section">
                 <Mission />
-            </>
+            </section>
+            <nav>
+                <ul className="cd-vertical-nav">
+                    <li>
+                        <a href="#0" className="cd-prev inactive">
+                            Next
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" className="cd-next">
+                            Prev
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </Layout>
     );
 }

@@ -82,6 +82,20 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Oswald", sans-serif;
+  background-color: #434343;
+  background-color: #343535;
+}
+
+section {
+    background-color: #434343;
+    background-color: #343535;
+    /* background: rgb(25,24,28);
+background: linear-gradient(90deg, rgba(25,24,28,1) 0%, rgba(70,67,78,1) 50%, rgba(25,24,28,1) 100%); */
+
+}
+
+.lolo:hover {
+  cursor: pointer;
 }
 
 
@@ -111,7 +125,17 @@ a {
     color: #E3C280 !important;
 }
 
-.modal__call input {
+.call-me-btn {
+    color: #B87FD6 !important;
+    border: 1px solid #B87FD6 !important;
+    border-radius: 5px !important;
+    background: transparent !important;
+}
+
+.modal-call__title, .modal-call__desc {
+  color: #fff;
+}
+.modal-call input, .modal-call textarea {
   display: block;
 
   width: 100%;
@@ -119,11 +143,96 @@ a {
 
   border-radius: 4px;
 
-  border: 1px solid rgba(0, 0, 0, 0.87);
   outline: none;
   margin-bottom: 8px;
+
+  border: 2px solid #ccc;
+  background: #ccc;
+  border-radius: 5px;
+  transition: all .2s ease;
 }
 
-.modal__call input:first-child {
+.modal-call input:focus, .modal-call textarea:focus {
+    border-color: #B87FD6;
+    box-shadow: 0px 0px 2px 2px #B87FD6;
+    background: #fff;
+}
+
+.modal-call textarea {
+  margin-top: 16px;
+}
+
+.modal-call button {
+  margin-top: 8px;
+}
+
+.modal-call input:first-child {
   margin-bottom: 16px;
+}
+
+.sssss::after {
+  content: "LOFT STYLE LIFE";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #545454;
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6qfNGLDYNgDAe-L53Zs3xQDaqvH5-aNaRA&usqp=CAU") no-repeat; */
+  font-size: 70px;
+  position: absolute;
+  width: 25%;
+  top: 65px;
+  right: 0;
+  opacity: 0.2;
+  height: 100%;
+  text-align: left;
+}
+
+.sssssl::after {
+  content: "LOFT STYLE LIFE";
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #545454;
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq6qfNGLDYNgDAe-L53Zs3xQDaqvH5-aNaRA&usqp=CAU") no-repeat; */
+  font-size: 70px;
+  position: absolute;
+  width: 25%;
+  top: 65px;
+  left: 0;
+  opacity: 0.2;
+  height: 100%;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .sssss::after, .sssssl::after {
+    display: none;
+  }
+}
+
+
+.image-gallery-icon:hover {
+  color: #B87FD6;
+}
+
+.image-gallery-thumbnails-wrapper {
+  margin-top: 24px;
+}
+
+.image-gallery-thumbnail.active, 
+.image-gallery-thumbnail:hover, 
+.image-gallery-thumbnail:focus {
+  border: 2px solid #B87FD6;
+}
+
+.image-gallery-icon:hover,
+.image-gallery-icon:focus {
+  outline: none;
+}
+
+.image-gallery-slides {
+  height: 500px;
+}
+
+.image-gallery-slide,
+.image-gallery-image {
+  height: 100%;
 }

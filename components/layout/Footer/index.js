@@ -141,6 +141,7 @@ export default function Footer() {
                         <Typography
                             style={{ fontSize: 12, textAlign: "center" }}
                         >
+                            <span>ИП Альмухаметов И.Ф.</span>
                             {/* Казань, Россия */}
                             <i className={"att-phone"} />
                             <a

@@ -2,12 +2,17 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
 
-export default function PageTitle({ classnames = "", component = "h2", children  }) {
+export default function PageTitle({ classnames = "", component = "h2", children, style = { paddingBottom: 40 }  }) {
     return (
-        <Grid container justify={"space-evenly"} className={classnames} style={{marginBottom: 40}}>
+        <Grid
+            container
+            justify={"space-evenly"}
+            className={classnames}
+            style={style}
+        >
             <Hidden smDown>
                 <Grid item sm={3}>
-                    <div style={{ overflow: "hidden", color: "#242A35" }}>
+                    <div style={{ overflow: "hidden", color: "#B87FD6" }}>
                         ____________________________________________________
                     </div>
                 </Grid>
@@ -18,7 +23,7 @@ export default function PageTitle({ classnames = "", component = "h2", children 
                     variant={"h4"}
                     style={{
                         textAlign: "center",
-                        color: "#242A35",
+                        color: "#fff",
                     }}
                 >
                     {children}
@@ -26,7 +31,7 @@ export default function PageTitle({ classnames = "", component = "h2", children 
             </Grid>
             <Hidden smDown>
                 <Grid item sm={3}>
-                    <div style={{ overflow: "hidden", color: "#242A35" }}>
+                    <div style={{ overflow: "hidden", color: "#B87FD6" }}>
                         ____________________________________________________
                     </div>
                 </Grid>

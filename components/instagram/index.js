@@ -50,7 +50,7 @@ export default function Instagram() {
 
     return (
         !!data.length && (
-            <div style={{ marginTop: 40 }}>
+            <div style={{ paddingTop: 40, paddingBottom: 80 }}>
                 <PageTitle classnames={"page__title"}>МЫ В INSTAGRAM</PageTitle>
                 <div className="instagram">
                     <Typography align="center" style={{ marginTop: -20 }}>

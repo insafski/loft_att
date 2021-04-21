@@ -78,6 +78,7 @@ function Breadcrumb() {
                                 <li
                                     aria-hidden="true"
                                     className="MuiBreadcrumbs-separator"
+                                    style={{color: "#fff"}}
                                 >
                                     ›
                                 </li>
@@ -96,6 +97,9 @@ function Breadcrumb() {
                                             content={position}
                                         />
                                         <span
+                                        style={{
+                                            color: "#fff"
+                                        }}
                                             itemProp="name"
                                             className="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextPrimary"
                                         >

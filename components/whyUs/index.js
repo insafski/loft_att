@@ -17,7 +17,7 @@ export default function WhyUs() {
     const classes = useStyles();
 
     return (
-        <div style={{ marginTop: 40 }}>
+        <div style={{ paddingTop: 40 }}>
             <PageTitle classnames={"page__title"}>
                 ПОЧЕМУ СТОИТ ВЫБРАТЬ НАС?
             </PageTitle>

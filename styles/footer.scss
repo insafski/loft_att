@@ -1,9 +1,10 @@
 .footer {
-    background: #4a5261;
+    background: #191919;
     display: block;
     color: #fff;
+    color: #696969;
+
     flex-grow: 1;
-    margin-top: 40px;
     
     &__content {
         padding-top: 24px;
@@ -23,7 +24,7 @@
             transition: color 0.3s ease;
 
             &:hover {
-                color: #FFA31A;
+                color: #B87FD6;
             }
         }
     }
@@ -32,6 +33,7 @@
         border-radius: 4px;
 
         &:hover {
+            color: #fff;
             background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
         }
     }

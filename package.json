@@ -21,6 +21,7 @@
     "react-device-detect": "^1.15.0",
     "react-dom": "17.0.1",
     "react-final-form": "^6.5.2",
+    "react-image-gallery": "^1.0.8",
     "react-parallax": "^3.1.2",
     "sass": "^1.32.5",
     "stimulus": "^2.0.0",

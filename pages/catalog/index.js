@@ -31,9 +31,32 @@ export default function Catalog() {
             <MyContainer maxWidth={"md"}>
                 <Breadcrumb />
                 <PageTitle component="h1">Список товаров</PageTitle>
-                <Grid container spacing={3}>
-                    <GalleryItems list={data.categories} />
-                </Grid>
+            </MyContainer>
+            <MyContainer
+                maxWidth={"md"}
+                sectionStyle={{
+                    paddingBottom: 40,
+                }}
+                style={{
+                    paddingBottom: 40,
+                    boxShadow: "0px 0px 40px -10px #000",
+                    background: "rgb(25,24,28)",
+                    background:
+                        "linear-gradient(90deg, rgba(25,24,28,1) 0%, rgba(35,35,35,1) 50%, rgba(25,24,28,1) 100%)",
+                }}
+            >
+                <div
+                    style={{
+                        paddingTop: 80,
+                        paddingBottom: 70,
+                        position: "relative",
+                    }}
+                    className={"sssssl"}
+                >
+                    <Grid container spacing={3}>
+                        <GalleryItems list={data.categories} />
+                    </Grid>
+                </div>
             </MyContainer>
         </Layout>
     );

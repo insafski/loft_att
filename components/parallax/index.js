@@ -10,7 +10,7 @@ export default function SimpleParallax() {
             bgImage="https://royally.ru/Files/pt/picture/1117/13_1511855228.jpg"
             bgImageAlt="Loft furniture"
             strength={-100}
-            style={{ marginTop: 40 }}
+            style={{ paddingTop: 40 }}
         >
             <Container
                 maxWidth={"md"}

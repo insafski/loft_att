@@ -8,7 +8,7 @@ export default function Custom404() {
     return (
         <Layout>
             <MyContainer maxWidth={"md"} className={"main-page"}>
-                <div style={{ marginTop: 200 }}>
+                <div style={{ paddingTop: 200 }}>
                     <Typography
                         component={"h1"}
                         variant={"h4"}

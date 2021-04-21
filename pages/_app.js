@@ -9,8 +9,11 @@ import { yaMetrika, googleAnalitycs } from "../utils";
 
 import "swiper/swiper.scss";
 import "swiper/components/effect-fade/effect-fade.scss";
+import "react-image-gallery/styles/css/image-gallery.css";
 
 import '../styles/globals.css'
+import "../styles/screset.css";
+import "../styles/scstyle.css";
 import '../styles/footer.scss'
 import '../styles/header.scss'
 import '../styles/main.scss'
@@ -26,7 +29,12 @@ export default function MyApp({ Component, pageProps }) {
         if (process.env.NODE_ENV !== "development") {
             yaMetrika();
             googleAnalitycs();
-		}
+        }
+        
+        document.getElementsByTagName("body")[0].setAttribute("data-hijacking", "off")
+        document
+            .getElementsByTagName("body")[0]
+            .setAttribute("data-animation", "scaleDown");
     }, []);
 
     const pageSeo = get(pageProps, "pageSeo", {});
@@ -80,6 +88,11 @@ export default function MyApp({ Component, pageProps }) {
                     href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@300;400;500;700&display=swap"
                     rel="stylesheet"
                 />
+                <script src="/utils/js/modernizr.js"></script>
+                <script src="/utils/js/jquery-2.1.4.js"></script>
+                <script src="/utils/js/velocity.min.js"></script>
+                <script src="/utils/js/velocity.ui.min.js"></script>
+                <script src="/utils/js/main.js"></script>
             </Head>
             <ThemeProvider theme={theme}>
                 {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

@@ -28,7 +28,8 @@
     transition: all ease-out 0.3s;
 
     &:hover {
-        color: #E3C280;
+        // color: #E3C280;
+        color: #e1caeb;
     }
   }
 
@@ -84,6 +85,8 @@
   // color: #e58c29;
   // color: #E3C280;
   color: #FFA31A;
+  color: #7341c4;
+  color: #B87FD6;
 
   &::after {
     content: '';
@@ -92,7 +95,9 @@
     background: #fff;
   }
   &:hover {
-      color: #FFA31A;
+      // color: #FFA31A;
+      color: #7341c4 !important;
+      color: #B87FD6 !important;
   }
 }
 

@@ -7,9 +7,8 @@ export default function Mission() {
         <section>
             <div
                 style={{
-                    background: "#242A35",
-                    marginTop: 80,
-                    marginBottom: -40,
+                    background: "#19181c",
+                    paddingBottom: -40,
                 }}
             >
                 <Container maxWidth={"md"} className={"main-page"}>

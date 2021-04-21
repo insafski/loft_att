@@ -5,10 +5,10 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: "#242A35",
+            main: "#fff",
         },
         secondary: {
-            main: "#19857b",
+            main: "#fff",
         },
         error: {
             main: red.A400,
@@ -20,6 +20,7 @@ const theme = createMuiTheme({
     },
     typography: {
         fontFamily: "Oswald, sans-serif",
+        color: "#fff",
         h1: {
             fontSize: "1.2rem",
             "@media (min-width:600px)": {

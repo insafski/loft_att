@@ -8,6 +8,8 @@ import Hidden from "@material-ui/core/Hidden";
 import Tooltip from "@material-ui/core/Tooltip";
 import Zoom from "@material-ui/core/Zoom";
 
+import ImageGallery from "react-image-gallery";
+
 import MyContainer from "../../components/MyContainer";
 import Layout from "../../components/layout";
 import PageImage from "../../components/pageImage";
@@ -40,6 +42,8 @@ export default function Product({ product }) {
         catalog = []
     } = product;
 
+    const imgs = catalog.map(({ src }) => ({ original: src, thumbnail: src }));
+
     return (
         <Layout>
             <PageImage
@@ -50,12 +54,25 @@ export default function Product({ product }) {
             />
             <MyContainer
                 maxWidth={"md"}
-                style={{
-                    marginTop: 100,
+                sectionStyle={{
+                    paddingTop: 80,
                 }}
             >
                 <Breadcrumb />
-
+            </MyContainer>
+            <MyContainer
+                maxWidth={"md"}
+                sectionStyle={{
+                    paddingBottom: 40,
+                }}
+                style={{
+                    paddingTop: 40,
+                    boxShadow: "0px 0px 40px -10px #000",
+                    background: "rgb(25,24,28)",
+                    background:
+                        "linear-gradient(90deg, rgba(25,24,28,1) 0%, rgba(35,35,35,1) 50%, rgba(25,24,28,1) 100%)",
+                }}
+            >
                 <Grid
                     container
                     spacing={3}
@@ -73,14 +90,14 @@ export default function Product({ product }) {
                                 variant={"h4"}
                                 style={{
                                     textAlign: "center",
-                                    color: "#2a3e53",
+                                    color: "#fff",
                                     marginBottom: 24,
                                 }}
                             >
                                 {title}
                             </Typography>
                         </Hidden>
-                        <CarouselGallery
+                        {/* <CarouselGallery
                             items={
                                 // product === "wood-racks"
                                 //     ? [
@@ -90,6 +107,36 @@ export default function Product({ product }) {
                                 catalog
                             }
                             salePercent={salePercent}
+                        /> */}
+                        <ImageGallery
+                            items={imgs}
+                            thumbnailPosition={"bottom"}
+                            showPlayButton={false}
+                            showBullets={true}
+                            renderItem={({ original }) => {
+                                return (
+                                    <img
+                                        className="image-gallery-image"
+                                        style={{
+                                            objectFit: "contain",
+                                        }}
+                                        src={original}
+                                    />
+                                );
+                            }}
+                            renderThumbInner={({ thumbnail }) => {
+                                return (
+                                    <div style={{ height: 80 }}>
+                                        <img
+                                            width={"100%"}
+                                            height={"100%"}
+                                            src={thumbnail}
+                                            style={{ objectFit: "cover" }}
+                                        />
+                                        ;
+                                    </div>
+                                );
+                            }}
                         />
                     </Grid>
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -99,7 +146,7 @@ export default function Product({ product }) {
                                 variant={"h4"}
                                 style={{
                                     textAlign: "center",
-                                    color: "#2a3e53",
+                                    color: "#fff",
                                 }}
                             >
                                 {title}
@@ -138,7 +185,7 @@ export default function Product({ product }) {
                                     variant={"h5"}
                                     component={"span"}
                                     style={{
-                                        color: "rgb(115, 65, 196)",
+                                        color: "#B87FD6",
                                     }}
                                     x
                                 >
@@ -165,7 +212,8 @@ export default function Product({ product }) {
                                         variant={"h5"}
                                         style={{
                                             letterSpacing: "1px",
-                                            color: "rgb(115, 65, 196)",
+                                            // color: "rgb(115, 65, 196)",
+                                            color: "#696969",
                                         }}
                                     >
                                         {saleText}
@@ -174,7 +222,11 @@ export default function Product({ product }) {
                             </Grid>
                         </Grid>
                         <br />
-                        <Divider />
+                        <Divider
+                            style={{
+                                background: "#696969",
+                            }}
+                        />
                         <br />
                         {/* <Typography
                             variant={"subtitle1"}
@@ -191,6 +243,7 @@ export default function Product({ product }) {
                                     component={"span"}
                                     style={{
                                         letterSpacing: "1px",
+                                        color: "#696969",
                                     }}
                                 >
                                     {`${availability}: ${buildTime}`}
@@ -200,7 +253,11 @@ export default function Product({ product }) {
                         {(materials || sizes) && (
                             <>
                                 <br />
-                                <Divider />
+                                <Divider
+                                    style={{
+                                        background: "#696969",
+                                    }}
+                                />
                                 <br />
                                 {/* <Typography
                                     variant={"subtitle1"}
@@ -213,7 +270,12 @@ export default function Product({ product }) {
                                 </Typography> */}
                                 <Grid container>
                                     <Grid item>
-                                        <ul className={"product__character"}>
+                                        <ul
+                                            className={"product__character"}
+                                            style={{
+                                                color: "#696969",
+                                            }}
+                                        >
                                             <li key={1}>
                                                 <span>{materials}</span>
                                             </li>
@@ -235,20 +297,28 @@ export default function Product({ product }) {
                             style={{
                                 fontSize: "0.7rem",
                                 color: "rgba(0, 0, 0, 0.54)",
+                                color: "#696969",
                             }}
                         >
-                            *Вы всегда можете заказать подходящийц именно Вам
+                            *Вы всегда можете заказать подходящий именно Вам
                             размер изделия.
                         </span>
                         {!!colors.length && (
                             <>
                                 <br />
-                                <Divider />
+                                <br />
+                                <Divider
+                                    style={{
+                                        background: "#696969",
+                                    }}
+                                />
+                                <br />
                                 <Typography
                                     variant={"subtitle1"}
                                     color="textSecondary"
                                     style={{
                                         letterSpacing: "1px",
+                                        color: "#696969",
                                     }}
                                 >
                                     Доступные цвета металла:
@@ -268,7 +338,11 @@ export default function Product({ product }) {
                             </>
                         )}
                         <br />
-                        <Divider />
+                        <Divider
+                            style={{
+                                background: "#696969",
+                            }}
+                        />
                         <br />
                         <Grid container justify={"center"}>
                             <Grid item>
